@@ -31,6 +31,8 @@ def turn(board)
   else
     until valid_move?(board,index)
       turn(board)
+    end
+  end
 end
 
 def move(board,index,token="X")
