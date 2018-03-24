@@ -24,14 +24,15 @@ end
 
 def turn(board)
   puts "Please enter 1-9:"
-  input=gets.strip
-  input.to_i
+  index=gets.strip
+  index.to_i
+  if valid_move?(board,index)
+    move(board,index)
+  else
+    until valid_move?(board,index)
+      turn(board)
 end
 
 def move(board,index,token="X")
-  if (valid_move?(board,index))
     board[index]=token
-  else
-
-  end
 end
