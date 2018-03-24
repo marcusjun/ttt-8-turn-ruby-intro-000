@@ -34,7 +34,7 @@ def turn(board)
     #while !valid_move?(board,index)
       #puts "Please enter 1-9:"
       turn(board)
-    end
+    #end
   end
 end
 
