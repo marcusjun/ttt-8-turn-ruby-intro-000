@@ -30,7 +30,8 @@ def turn(board)
     move(board,index)
     display_board(board)
   else
-    until valid_move?(board,index)
+    #until valid_move?(board,index)
+    while !valid_move?(board,index)
       turn(board)
     end
   end
