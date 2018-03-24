@@ -32,7 +32,7 @@ def turn(board)
   else
     #until valid_move?(board,index)
     while !valid_move?(board,index)
-      turn#(board)
+      turn(board)
     end
   end
 end
